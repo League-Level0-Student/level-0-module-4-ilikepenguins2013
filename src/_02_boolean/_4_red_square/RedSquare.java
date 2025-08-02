@@ -15,7 +15,7 @@ public class RedSquare {
 	
 	public static void main(String[] args) {
 		
-		boolean isRed = false;
+		boolean isRed = true;
 		boolean isSquare = true;
 		
 		// The && shown here means that both booleans must be true for the 
@@ -24,9 +24,24 @@ public class RedSquare {
 		if(isRed && isSquare) {
 			drawRedSquare();
 		}
+		else if(!isRed && isSquare == true) {
+			drawBlueSquare();
+		}
+		else if (isRed == true && !isSquare) {
+			drawRedTriangle();
+		}
+		else if (!isRed & !isSquare) {
+			drawBlueTriangle();
+		}
 		else {
             JOptionPane.showMessageDialog(null, "No shape was drawn!");
         }
+		if(drewRedSquare || drewBlueSquare == true) {
+			JOptionPane.showMessageDialog(null, "u drew a square, no way u r the culmination of creation, u drew a square\n u r the holy one i shall bow down to u pls dont kill me im too young to go\nimma die id never thought id see the day when someone drew a square that is crazy(feints and drops to ground) xx");
+		}
+		if(drewRedTriangle || drewBlueTriangle == true) { 
+			JOptionPane.showMessageDialog(null, "wow u drew a triangle, impresive, that is the ugliest trinalge ive ever seen get out of her(grabs crow bar and starts chasing you)");
+		}
 		
 		// 1. Run the program and notice no shape is drawn.
 		
