@@ -38,7 +38,8 @@ import processing.core.PImage;
 public class GooglyEyes extends PApplet {
     static final int WIDTH = 800;
     static final int HEIGHT = 600;
-    
+    int last_x;
+    int last_y;
     PImage face;
     
     @Override
