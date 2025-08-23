@@ -38,8 +38,8 @@ import processing.core.PImage;
 public class GooglyEyes extends PApplet {
     static final int WIDTH = 800;
     static final int HEIGHT = 600;
-    int last_x;
-    int last_y;
+    int last_x = 580;
+    int last_y = 260;
     PImage face;
     
     @Override
@@ -63,8 +63,13 @@ public class GooglyEyes extends PApplet {
     	if(Math.sqrt(Math.pow(mouseX - 580, 2) + Math.pow(mouseY - 260, 2)) < 100) {
 	    	ellipse(mouseX,mouseY,90,90);
 	    	ellipse(mouseX-370,mouseY+20,90,90);
+	    	last_x = mouseX;
+	    	last_y = mouseY;
     	}
-    	
+    	else {
+    		ellipse(last_x,last_y,90,90);
+    		ellipse(last_x-370, last_y+20,90,90);
+    	}
 
 
     	
