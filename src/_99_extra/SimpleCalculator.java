@@ -7,7 +7,10 @@ public class SimpleCalculator {
 	public static void main(String[] args) {
 
 		// 1. Get 2 numbers from the user and convert them to integer.
-
+		String input = JOptionPane.showInputDialog("give me a number");
+		String input2 = JOptionPane.showInputDialog("give me a number");
+		int num1 = Integer.parseInt(input);
+		int num2 = Integer.parseInt(input2);
 		// 2. Customize pop-up to support add/subtract/multiply/divide operations.
 		int operation = JOptionPane.showOptionDialog(null, "The question", "Pop-up Title", 0,
 				JOptionPane.INFORMATION_MESSAGE, null, new String[] { "Button1", "Button2", "Button3", "Button3" },
